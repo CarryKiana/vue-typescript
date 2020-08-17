@@ -7,7 +7,7 @@ export default {
   // 查询ip黑名单列表
   getIpBlacklist: (data: any) => {
     return service({
-      url: baseUrl + 'ipBlacklist/findByPage',
+      url: baseUrl + '',
       method: 'post',
       data: qs.stringify(data)
     })
@@ -15,7 +15,7 @@ export default {
   // 导入黑名单
   importIpBlacklist: (data: any) => {
     return service({
-      url: baseUrl + 'ipBlacklist/importIpBlacklist',
+      url: baseUrl + '',
       method: 'post',
       timeout: 125000,
       data
@@ -24,7 +24,7 @@ export default {
   // 移除Ip黑名单
   delIpBlacklistById: (data: any) => {
     return service({
-      url: baseUrl + 'ipBlacklist/deleteIpBlacklistById',
+      url: baseUrl + '',
       method: 'post',
       data: qs.stringify(data)
     })

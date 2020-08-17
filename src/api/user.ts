@@ -7,7 +7,7 @@ export default {
     // 用户信息列表
   getUserList: (data: any) => {
     return service({
-      url: baseUrl + '/a/sys/userManage/list',
+      url: baseUrl + '',
       method: 'post',
       data: qs.stringify(data)
     })
@@ -15,7 +15,7 @@ export default {
     // 更改用户登录状态
   updateLoginFlag: (data: any) => {
     return service({
-      url: baseUrl + '/a/sys/userManage/updateLoginFlag',
+      url: baseUrl + '',
       method: 'post',
       data: qs.stringify(data)
     })
@@ -23,7 +23,7 @@ export default {
     // 删除用户
   delete: (data: any) => {
     return service({
-      url: baseUrl + '/a/sys/userManage/delete',
+      url: baseUrl + '',
       method: 'post',
       data: qs.stringify(data)
     })
@@ -31,7 +31,7 @@ export default {
     // 获取所有广告主
   getAdList: (data: any) => {
     return service({
-      url: process.env.BASE_API + 'advertiser/list',
+      url: process.env.BASE_API + '',
       method: 'post',
       data: qs.stringify(data)
     })
@@ -39,7 +39,7 @@ export default {
     // 保存新增账号
   add: (data: any) => {
     return service({
-      url: baseUrl + '/a/sys/userManage/save',
+      url: baseUrl + '',
       method: 'post',
       data: qs.stringify(data)
     })
@@ -47,7 +47,7 @@ export default {
     // 修改账号
   edit: (data: any) => {
     return service({
-      url: baseUrl + '/a/sys/userManage/update',
+      url: baseUrl + '',
       method: 'post',
       data: qs.stringify(data)
     })
@@ -55,7 +55,7 @@ export default {
     // 获取用户信息
   getUserById: (data: any) => {
     return service({
-      url: baseUrl + '/a/sys/userManage/getUserById',
+      url: baseUrl + '',
       method: 'post',
       data: qs.stringify(data)
     })
@@ -63,7 +63,7 @@ export default {
     // 获取计划列表
   planList: (data: any) => {
     return service({
-      url: baseUrl + '/a/sys/userManage/planList',
+      url: baseUrl + '',
       method: 'get',
       params: data
     })

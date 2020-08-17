@@ -15,7 +15,7 @@ export default {
     // 获取下拉选项列表
   getSelectedList: (data: any) => {
     return service({
-      url: baseUrl + 'report/getGroupNameSet',
+      url: baseUrl + '',
       method: 'post',
       data: qs.stringify(data)
     })
@@ -23,7 +23,7 @@ export default {
     // 获取柱状图数据
   getOfflineReportChartData: (data: any) => {
     return service({
-      url: baseUrl + 'report/getOfflineReportTrend',
+      url: baseUrl + '',
       method: 'post',
       data: qs.stringify(data)
     })
