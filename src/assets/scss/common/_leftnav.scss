@@ -1,0 +1,83 @@
+.leftnav {
+    width: 180px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #676D7F;
+    z-index: 999;
+
+    .logo {
+        cursor: pointer;
+        margin: 10px;
+
+        img {
+            width: 138px;
+        }
+    }
+
+    .el-menu {
+        width: 180px;
+
+        .title {
+            font-size: 16px;
+        }
+
+        .g-icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+
+            &.g-icon-msg {
+                background: url("../images/icon-bell.png")no-repeat;
+            }
+
+            &.g-icon-setting {
+                background: url("../images/icon-setting.png")no-repeat;
+            }
+
+            &.g-icon-cms {
+                background: url("../images/icon-cms.png")no-repeat;
+            }
+
+         
+        }
+    }
+
+    .el-submenu {
+        .el-submenu__title {
+            border-left: 4px solid transparent;
+        }
+
+        .el-submenu__icon-arrow {
+            top: 30px;
+            width: 12px;
+            height: 12px;
+            background: url("../images/icon-down.png")no-repeat;
+        }
+
+        .el-icon-arrow-down:before {
+            display: none;
+        }
+    }
+
+    .el-menu-item {
+        min-width: 180px;
+        border-left: 4px solid transparent;
+        color: #b5b9C6 !important;
+
+        &.oneitem {
+            color: #fff !important;
+        }
+
+        &.is-active {
+            background-color: rgb(75, 79, 93) !important;
+            border-left: 4px solid #E05155;
+            color: #fff !important;
+            font-weight: bold;
+        }
+    }
+
+}
+

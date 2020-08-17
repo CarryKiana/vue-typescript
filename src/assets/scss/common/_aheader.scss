@@ -1,0 +1,50 @@
+.a-header {
+    margin-left: 180px;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+    background: #fff;
+    .title {
+        float: left;
+        width: 120px;
+        text-align: center;
+        background: #eeeff2;
+        border-right: 1px solid rgba(102, 102, 102, 0.2);
+        border-bottom: 1px solid #eeeff2;
+        color: #666;
+        font-weight: bold;
+    }
+    .right-wrap {
+        margin-right: 22px;
+        float: right;
+        div {
+            float: left;
+            margin-left: 20px;
+            &.exit {
+                cursor: pointer;
+                color: #000;
+            }
+        }
+    }
+}
+
+.pro-bd {
+    position: relative;
+    border: 1px solid #D2D2D2;
+    background: #fff;
+    width: 180px;
+    right:48px!important;
+    z-index: 99;
+        li {
+            a {
+                display: block;
+                padding-left: 15px;
+            }
+            &:hover {
+                background-color: #F2F2F2 !important;
+                a { 
+                    color: $baseRed;
+                }
+            }
+        }
+}
